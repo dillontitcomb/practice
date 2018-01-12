@@ -1,4 +1,13 @@
-/*LOAD WEBPAGE WITH ELEMENT HIDDEN*/
-example {
+/*SHOW, HIDE, TOGGLE*/
+exampleElementClassorID {
   display: none;
+}
+
+/* LINK STYLING WITH HOVER TEXT*/
+.clickable {
+  cursor: pointer;
+  color: #0088cc;
+}
+.clickable:hover {
+  text-decoration: underline;
 }

@@ -1,17 +1,11 @@
 $(document).ready(function() {
-// CREATING VARIABLES FROM FORMS
 
-// FIELD
-var variable= $("#exampleid").val();
+// HIDE, SHOW, TOGGLE
+// **While CSS has the hidden element as display: none and HTML has divs with hidden/unhidden classes:
 
-// DROPDOWN
-var variable = $("#exampleid").val();
-
-// RADIO BUTTONS
-var variable = $("input:radio[name=exampleValueCategory]:checked").val();
-
-// BUTTON SUBMISSION
-$("form#exampleid").submit(function(event) {
-
-// PREVENT DEFAULT (submission error causes ? in URL)
-event.preventDefault();
+$(document).ready(function() {
+  $(".exampleclass").click(function() {
+    $("#exampleid-showing").toggle();
+    $("#exampleid-hidden").toggle();
+  });
+});
